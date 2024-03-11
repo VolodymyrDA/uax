@@ -1,0 +1,21 @@
+spring:
+  mvc:
+    format:
+      date-time: iso
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: ${CLIENT_ID}
+            client-secret: ${CLIENT_SECRET}
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/uax
+    username: postgres
+    password: 123547
+    driver-class-name: org.postgresql.Driver
+
+springdoc:
+  swagger-ui:
+    path: /api/swagger-ui.html
