@@ -11,9 +11,9 @@ spring:
             client-secret: ${CLIENT_SECRET}
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/uax
-    username: postgres
-    password: 123547
+    url: ${POSTGRES_URL}
+    username: ${POSTGRES_USER}
+    password: ${POSTGRES_PASSWORD}
     driver-class-name: org.postgresql.Driver
 
 springdoc:
